@@ -11,12 +11,6 @@ function solution(seoul) {
     //     }
     // }
 }
-
-
-
-
-
-
 test('서울에서 김서방 찾기', () => {
     expect(solution(["Jane", "Kim"])).toBe("김서방은 1에 있다")
 })
