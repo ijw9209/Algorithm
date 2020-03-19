@@ -1,20 +1,32 @@
+// function solution(arr) {
+
+//     let answer = [];
+
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] !== arr[i + 1]) {
+//             answer[i] = arr[i]
+//         }
+//     }
+
+//     function isUndefiend(value) {
+//         return value !== undefined;
+//     }
+
+//     var filter = answer.filter(isUndefiend);
+//     return filter;
+
+// }
+
 function solution(arr) {
-
     let answer = [];
-
+    var j = 0;
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] !== arr[i + 1]) {
-            answer[i] = arr[i]
+            answer[j] = arr[i]
+            j++
         }
     }
-
-    function isUndefiend(value) {
-        return value !== undefined;
-    }
-
-    var filter = answer.filter(isUndefiend);
-    return filter;
-
+    return answer;
 }
 
 test('같은 숫자는 싫어', () => {
