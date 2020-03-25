@@ -1,4 +1,4 @@
-function solution(arr) {
+solution = arr => {
     let sum = 0;
     for (let value of arr) {
         sum += value;
@@ -12,7 +12,7 @@ test('평균구하기', () => {
 })
 
 
-//다른사람풀이
-function average(array) {
-    return array.reduce((a, b) => a + b) / array.length;
-}
+// //다른사람풀이
+// function average(array) {
+//     return array.reduce((a, b) => a + b) / array.length;
+// }
