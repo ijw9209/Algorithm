@@ -17,3 +17,8 @@ test('콜라츠 추측', () => {
     expect(solution(16)).toEqual(4);
     expect(solution(626331)).toEqual(-1);
 })
+
+//다른사람의 풀이
+//function collatz(num,count = 0) {
+//     return num == 1 ? (count >= 500 ? -1 : count) : collatz(num % 2 == 0 ? num / 2 : num * 3 + 1,++count);
+// }
